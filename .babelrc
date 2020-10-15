@@ -1,0 +1,9 @@
+{
+  "presets":[
+    ["@babel/preset-env"]
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd-mobile", "style": true }] ,// `style: true` 会加载 less 文件
+    ["@babel/plugin-proposal-decorators",{"legacy":true}]
+  ]
+}
