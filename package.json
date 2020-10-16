@@ -7,6 +7,9 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd-mobile": "^2.3.4",
+    "axios": "^0.20.0",
+
+    "http-proxy-middleware": "^1.0.6",
     "rc-form": "2.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -41,14 +44,16 @@
     "less": "3.11.1",
     "less-loader": "5",
     "react-app-rewired": "^2.1.6",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "style-loader": "^2.0.0",
-    "react-redux": "^7.2.1"
+    "eslint": "6.6.0"
   },
   "theme": {
     "brand-primary": "#77CC99",
     "color-text-base": "#333",
     "brand-primary-tap": "#66aa88"
-  }
+  },
+  "proxy": "http://127.0.0.1:8080"
 }
