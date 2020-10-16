@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import "antd-mobile/dist/antd-mobile.less"
 import '@/assets/less/qm-style.less'
 ReactDOM.render(
   // <React.StrictMode>

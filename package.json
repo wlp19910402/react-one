@@ -42,11 +42,13 @@
     "less-loader": "5",
     "react-app-rewired": "^2.1.6",
     "react-router-dom": "^5.2.0",
-    "style-loader": "^2.0.0"
+    "redux": "^4.0.5",
+    "style-loader": "^2.0.0",
+    "react-redux": "^7.2.1"
   },
   "theme": {
     "brand-primary": "#77CC99",
     "color-text-base": "#333",
-    "brand-primary-tap":"#66aa88"
+    "brand-primary-tap": "#66aa88"
   }
 }
