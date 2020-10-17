@@ -42,7 +42,7 @@ export const setTokenAuthTime = async () => {
  */
 export const mapObjectConvertToArray = (name, mapObj, level = 1) => {
   let tmpLocal = [...mapObj]
-  if (level == 2) {
+  if (level === 2) {
     //层级为2的Map对象
     tmpLocal.forEach((item) => {
       item[1] = [...item[1]]
@@ -57,9 +57,9 @@ export const mapObjectConvertToArray = (name, mapObj, level = 1) => {
  * @param {需要转成几层Map对象结构的} level
  */
 export const localArrayConvertToMapObjectInit = (name, level = 1) => {
-  if (getStorage(name) != undefined && getStorage(name) != null) {
+  if (getStorage(name) !== undefined && getStorage(name) !== null) {
     let tmp = getStorage(name)
-    if (level == 2) {
+    if (level === 2) {
       //层级为2的Map对象
       tmp.forEach((item) => {
         item[1] = new Map(item[1])

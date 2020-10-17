@@ -120,6 +120,9 @@ code {
   max-height: 300px;
   height: 100%;
 }
+.qm-radius {
+  border-radius: 30px;
+}
 .qm-fill-width {
   width: 100%;
 }

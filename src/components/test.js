@@ -38,7 +38,6 @@ class Cmp1 extends Component{
   toLogin(){
     this.props.history.push('/login')
   }
-
   render(){
     return (<div>
        <Button  type="primary" onClick={this.handleClick}>测试antd</Button>
