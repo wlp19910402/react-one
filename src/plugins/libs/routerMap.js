@@ -1,6 +1,6 @@
 import Test from '@/components/test'
 import Login from '@/views/Login'
-import Home from '@/views/Home'
+import Main from '@/views/Main'
 
 /**
  * 路由表
@@ -12,5 +12,5 @@ import Home from '@/views/Home'
 export default[
   {path:'/',name:'测试',component:Test,isAuth:true},
   {path:'/login',name:'登录',component:Login,isAuth:false},
-  {path:'/home',name:'首页',component:Home,isAuth:true}
+  {path:'/main',name:'首页',component:Main,isAuth:true}
 ]

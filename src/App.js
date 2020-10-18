@@ -8,7 +8,7 @@ import axios from 'axios'
 import {getStorage}from '@/plugins/common/storage'
 import { Toast} from 'antd-mobile';
 import Login from '@/views/Login'
-import Home from '@/views/Home'
+import Main from '@/views/Main'
 class App extends React.Component{
   async componentDidMount(){
     await this.fetchCheckLogin()
@@ -17,7 +17,7 @@ class App extends React.Component{
   fetchCheckLogin=async()=>{
     //用户是否已经登录过了
     if(this.props.user.isAuth){
-      if(window.location.pathname==='/login') {window.location.pathname='/home'}
+      if(window.location.pathname==='/login') {window.location.pathname='/main'}
       return
     }
     //本地是否有存储用户信息
@@ -45,7 +45,7 @@ class App extends React.Component{
       }
       let userData = { ...storageUserInfo, token:res.data.result.token}
       this.props.setUserInfo(userData)
-      if(window.location.pathname==='/login') {window.location.pathname='/home'}
+      if(window.location.pathname==='/login') {window.location.pathname='/main'}
       console.log('已经登录了')
       }catch(err){
         console.log(err)
@@ -59,7 +59,7 @@ class App extends React.Component{
           if(item.path!=='/login'){
           return (<Route path={item.path} key={index} exact component={item.isAuth&&!isAuth?Login:item.component}></Route>)
         }else{
-          return (<Route path={item.path} key={index} exact component={isAuth?Home:item.component}></Route>)
+          return (<Route path={item.path} key={index} exact component={isAuth?Main:item.component}></Route>)
         }
         })}
       </Router>
